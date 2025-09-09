@@ -4,8 +4,8 @@ import { useNavigate, Link } from "react-router-dom";
 import Input from "../../components/Inputs/Input";
 import { useState } from "react";
 import ProfilePhotoSelector from "../../components/Inputs/ProfilePhotoSelector";
-import { UserContext } from "../../context/userContext";
-
+import { UserContext } from "../../context/UserContext";
+import {validateEmail} from "../../utils/helper";
 const SignUp = () => {
   const [profilePic, setProfilePic] = useState(null);
   const [fullName, setFullName] = useState("");
